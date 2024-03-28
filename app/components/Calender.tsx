@@ -139,7 +139,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="flex min-h-screen flex-col items-center justify-between py-12  pl-24">
         <div className="grid grid-cols-10">
           <div className="col-span-8">
           <FullCalendar
@@ -168,7 +168,7 @@ export default function Home() {
 
 
           </div>
-          <div id="draggable-el" className="ml-8 w-full border-2 p-2 rounded-md mt-16 lg:h-1/2 bg-black text-white">
+          <div id="draggable-el" className="ml-8 w-full border-2 p-2 rounded-md mt-16 sm:h-max lg:h-max sm:w-max lg:w-max bg-black text-white">
             <h1 className="font-bold text-lg text-center">Drag Event</h1>
             {events.map(event => (
               <div
