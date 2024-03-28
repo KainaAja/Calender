@@ -20,11 +20,12 @@ interface Event {
 
 export default function Home() {
   const [events, setEvents] = useState([
-    { title: 'event 1', id: '1' },
-    { title: 'event 2', id: '2' },
-    { title: 'event 3', id: '3' },
-    { title: 'event 4', id: '4' },
-    { title: 'event 5', id: '5' },
+    { title: 'Sakit', id: '1' },
+    { title: 'Izin', id: '2' },
+    { title: 'Demo Day', id: '3' },
+    { title: 'Townhall', id: '4' },
+    { title: 'WFH', id: '5' },
+    { title: 'WFO', id: '6  ' },
   ])
   const [allEvents, setAllEvents] = useState<Event[]>(() => {
     // Initialize with the events stored in local storage or an empty array if none exists
